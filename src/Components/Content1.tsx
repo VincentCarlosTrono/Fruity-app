@@ -8,7 +8,7 @@ const Content1 = () => {
       <div className="banner-description">
         <h1>Fresh Juice</h1>
         <p>
-          We Beleive That Healthy Eating, Clean Air And,
+          We Believe That Healthy Eating, Clean Air And,
           <br /> Gental Char Best Start To Genuine Well being
         </p>
         <button>Shop now</button>
