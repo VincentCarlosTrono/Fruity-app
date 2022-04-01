@@ -1,0 +1,52 @@
+.additional-product {
+  text-align: center;
+}
+.additional-product h1 {
+  color: purple;
+}
+.additional-product h2 {
+  color: purple;
+  font-size: 2rem;
+}
+.additional-product p {
+  font-size: 2rem;
+}
+.addCard img {
+  height: 14rem;
+  width: 14rem;
+}
+.addCard {
+  box-shadow: 1px 1px 5px gray;
+  border-radius: 1rem;
+  padding: 3rem 1rem 3rem 1rem;
+  transform: scale(0.9);
+}
+.addCards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+
+  padding: 5rem 10rem 5rem 10rem;
+  transform: scale(0.9);
+}
+.addcard-info button {
+  font-size: 6rem;
+  background: none;
+  border: hidden;
+  opacity: 30%;
+}
+.addcard-info button:hover {
+  opacity: 100%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.addCard:hover {
+  cursor: pointer;
+  box-shadow: 1px 1px 5px purple;
+  transition: 0.5s;
+}
+@media only screen and(max-width: 800px) {
+  .addCards {
+    padding: 0;
+  }
+}

@@ -1,0 +1,54 @@
+.content1 {
+  display: flex;
+  padding-top: 15rem;
+  width: 100%;
+
+  align-items: center;
+  justify-content: center;
+}
+.banner-description {
+  justify-content: center;
+  align-items: center;
+}
+.content1 h1 {
+  font-size: 4rem;
+  color: purple;
+  margin-bottom: 0;
+}
+.content1 p {
+  font-size: 27px;
+  color: gray;
+  padding-bottom: 10px;
+}
+.content1 button {
+  background: purple;
+  color: white;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.content1 img {
+  display: block;
+}
+.content1 button:hover {
+  cursor: pointer;
+  transition: 1s;
+  background: linear-gradient(purple, pink);
+}
+@media only screen and (max-width: 800px) {
+  .content1 img {
+    display: none;
+  }
+  .content1 {
+    height: auto;
+  }
+  .content1 {
+    text-align: center;
+  }
+  .banner-description {
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+}

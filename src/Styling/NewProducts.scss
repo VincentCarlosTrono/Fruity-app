@@ -1,0 +1,70 @@
+.cards {
+  padding: 10rem;
+  z-index: 1;
+}
+.cards h1 {
+  text-align: center;
+  padding: 2rem;
+  color: purple;
+}
+.card {
+  padding: 1rem;
+}
+.card img {
+  height: 18rem;
+  width: 18rem;
+}
+.card-info {
+  position: relative;
+  text-align: center;
+}
+.card-info p {
+  color: black;
+  font-size: 2rem;
+}
+.new-product {
+  box-shadow: 1px 1px 4px gray;
+  border-radius: 1rem;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 0.8fr);
+  grid-gap: 1rem;
+}
+.bxs-cart-alt {
+  padding: 1rem;
+  font-size: 10rem;
+  color: purple;
+}
+.card-info button {
+  padding: 59px;
+  position: absolute;
+  bottom: 90px;
+  left: -12px;
+  background: none;
+  border: none;
+  opacity: 0;
+}
+.card-info button:hover {
+  cursor: pointer;
+  opacity: 100;
+  transition: 0.5s;
+}
+.new-product:hover {
+  cursor: pointer;
+  transform: scale(0.9);
+  transition: 0.5s;
+  box-shadow: 1px 1px 10px purple;
+}
+
+@media only screen and (max-width: 800px) {
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 0.8fr);
+    grid-gap: 1rem;
+    transform: scale(0.8);
+  }
+  .cards {
+    padding: 0;
+  }
+}

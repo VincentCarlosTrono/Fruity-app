@@ -1,0 +1,93 @@
+.product-cards {
+  padding: 1rem 10rem 3rem 10rem;
+}
+.allProducts {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+}
+.allProducts h1 {
+  text-align: center;
+  color: purple;
+}
+.product h1 {
+  color: purple;
+}
+.product {
+  text-align: center;
+  padding: 3rem;
+  box-shadow: 1px 1px 5px gray;
+  border-radius: 1rem;
+  transform: scale(0.9);
+}
+.product-card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+}
+.product img {
+  height: 10rem;
+  width: 10rem;
+}
+.product button {
+  font-size: 5rem;
+  opacity: 30%;
+  border-radius: 1rem;
+  padding: 5px;
+  background: none;
+  border: hidden;
+}
+.product p {
+  font-size: 2rem;
+}
+.show-btn {
+  text-align: center;
+  display: none;
+}
+.show-btn button {
+  padding: 1rem;
+  border-radius: 2rem;
+  background: none;
+  font-size: 20px;
+  color: purple;
+  transition: 0.5s;
+  border-color: purple;
+}
+
+.hide-product {
+  display: block;
+}
+
+.product button:hover {
+  cursor: pointer;
+  opacity: 100%;
+  transition: 0.5s;
+}
+.product:hover {
+  cursor: pointer;
+  box-shadow: 1px 2px 5px purple;
+  transition: 0.5s;
+}
+.show-btn button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.5;
+}
+
+@media only screen and(max-width: 800px) {
+  .product-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    transform: scale(0.8);
+  }
+  .show-btn {
+    display: block;
+  }
+  .hide-product {
+    display: none;
+  }
+  .product-cards {
+    padding: 0;
+  }
+}

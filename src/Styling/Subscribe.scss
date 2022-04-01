@@ -1,0 +1,53 @@
+.subscription {
+  border-top: 1px solid rgb(119, 117, 117);
+  border-bottom: 1px solid rgb(119, 117, 117);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0 2rem 0;
+}
+.info h1 {
+  color: purple;
+  font-size: 2rem;
+}
+.info p {
+  font-weight: 300;
+  font-size: 1rem;
+}
+.email {
+  border: 3px solid black;
+  padding: 1rem;
+  border-radius: 5rem;
+}
+.email input {
+  font-size: 1.5rem;
+  border: hidden;
+  padding: 1rem;
+}
+.email button {
+  font-size: 2rem;
+  border-radius: 5rem;
+  padding: 1rem;
+  background: purple;
+  color: white;
+}
+.email button:hover {
+  cursor: pointer;
+  background: rgb(204, 93, 195);
+}
+@media only screen and (max-width: 800px) {
+  .subscription {
+    border: hidden;
+    display: block;
+    text-align: center;
+  }
+  .email {
+    margin: 2rem 10rem 1rem 10rem;
+  }
+  .email input {
+    font-size: 1rem;
+  }
+  .email button {
+    font-size: 1rem;
+  }
+}

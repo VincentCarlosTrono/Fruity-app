@@ -1,0 +1,39 @@
+.footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  padding-top: 3rem;
+}
+.footer h1 {
+  font-family: cursive;
+}
+.footer ul {
+  padding: 0;
+}
+.footer li {
+  list-style: none;
+  text-align: left;
+  padding: 5px;
+  opacity: 50%;
+}
+.footer li:hover {
+  opacity: 100%;
+  color: purple;
+  cursor: pointer;
+}
+.footer-container h2 {
+  font-size: 1rem;
+  font-weight: 200;
+  text-align: center;
+  opacity: 50%;
+}
+@media only screen and (max-width: 800px) {
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(2, 0.8fr);
+    text-align: center;
+  }
+  .footer li {
+    text-align: center;
+  }
+}
