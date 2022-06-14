@@ -13,4 +13,30 @@ code {
 }
 * {
   scroll-behavior: smooth;
+  transition: 0.2s;
+  box-sizing: border-box;
+  /* border: 1px dashed green; */
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Lato, Poppins, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns:
+    minmax(1rem, 1fr)
+    minmax(1rem, 1200px)
+    minmax(1rem, 1fr);
 }

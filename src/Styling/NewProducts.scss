@@ -1,5 +1,5 @@
 .cards {
-  padding: 10rem;
+  padding: 5rem;
   z-index: 1;
 }
 .cards h1 {
@@ -8,11 +8,11 @@
   color: purple;
 }
 .card {
-  padding: 1rem;
+  padding: 10px;
 }
 .card img {
-  height: 18rem;
-  width: 18rem;
+  height: 10rem;
+  width: 10rem;
 }
 .card-info {
   position: relative;
@@ -20,7 +20,7 @@
 }
 .card-info p {
   color: black;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .new-product {
   box-shadow: 1px 1px 4px gray;
@@ -29,7 +29,7 @@
 .card-container {
   display: grid;
   grid-template-columns: repeat(4, 0.8fr);
-  grid-gap: 1rem;
+  grid-gap: 2rem;
 }
 .bxs-cart-alt {
   padding: 1rem;

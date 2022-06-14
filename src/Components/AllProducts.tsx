@@ -57,28 +57,13 @@ const products2 = [
 const AllProducts = () => {
   const [show, setShow] = useState<boolean>(false);
   return (
-    <div className="product-cards">
-      <div className="allProducts">
-        <h1>All Products</h1>
-        <div className="product-card">
-          {products.map((product: any) => {
-            const { picture, name, price } = product;
-            return (
-              <div className="product">
-                <img src={picture} alt="productImage" />
-                <h1>{name}</h1>
-                <p>{price}</p>
-                <button>
-                  <i className="bx bx-cart-download"></i>
-                </button>
-              </div>
-            );
-          })}
-        </div>
-        <div className="hide-product">
+    <div className="grid-container">
+      <div className="container product-cards">
+        <div className="allProducts">
+          <h1>All Products</h1>
           <div className="product-card">
-            {products2.map((product2: any) => {
-              const { picture, name, price } = product2;
+            {products.map((product: any) => {
+              const { picture, name, price } = product;
               return (
                 <div className="product">
                   <img src={picture} alt="productImage" />
@@ -91,18 +76,7 @@ const AllProducts = () => {
               );
             })}
           </div>
-        </div>
-        <div className="show-btn">
-          <button
-            onClick={() => {
-              setShow(!show);
-            }}
-          >
-            Show more
-          </button>
-        </div>
-        {show ? (
-          <div className="product2">
+          <div className="hide-product">
             <div className="product-card">
               {products2.map((product2: any) => {
                 const { picture, name, price } = product2;
@@ -119,9 +93,37 @@ const AllProducts = () => {
               })}
             </div>
           </div>
-        ) : (
-          <></>
-        )}
+          <div className="show-btn">
+            <button
+              onClick={() => {
+                setShow(!show);
+              }}
+            >
+              Show more
+            </button>
+          </div>
+          {show ? (
+            <div className="product2">
+              <div className="product-card">
+                {products2.map((product2: any) => {
+                  const { picture, name, price } = product2;
+                  return (
+                    <div className="product">
+                      <img src={picture} alt="productImage" />
+                      <h1>{name}</h1>
+                      <p>{price}</p>
+                      <button>
+                        <i className="bx bx-cart-download"></i>
+                      </button>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          ) : (
+            <></>
+          )}
+        </div>
       </div>
     </div>
   );
