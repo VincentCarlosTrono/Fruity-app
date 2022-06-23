@@ -6,20 +6,21 @@
 }
 .header h1 {
   color: purple;
-  font-size: 60px;
+  font-size: 2rem;
   font-family: cursive;
 }
 .navbar-btn {
   display: block;
 }
 .navbar-btn ul {
+  gap: 1rem;
   display: flex;
   font-size: 20px;
 }
 .navbar-btn li {
   list-style: none;
-  padding: 13px;
-  border-radius: 3rem;
+  padding: 0.6rem;
+  border-radius: 0.2rem;
   transition: 0.3s;
 }
 .navbar-btn a {
