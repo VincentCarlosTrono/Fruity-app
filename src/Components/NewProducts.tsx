@@ -4,6 +4,7 @@ import mango from "../Media/mango.ccc09483.png";
 import grapes from "../Media/grape.70083944.png";
 import mango2 from "../Media/mango2.c720de81.png";
 import strawberry from "../Media/strawberry.f451ee30.png";
+import { FruitInterface } from "../types";
 
 const NewProducts = () => {
   const fruits = [
@@ -33,7 +34,7 @@ const NewProducts = () => {
     <div className="cards" id="new-product">
       <h1>New Products</h1>
       <div className="card-container">
-        {fruits.map((fruit: any) => {
+        {fruits.map((fruit: FruitInterface) => {
           const { name, price, photo } = fruit;
 
           return (

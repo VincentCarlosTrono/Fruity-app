@@ -8,6 +8,7 @@ import product5 from "../Media/product3.983c17a0.png";
 import product6 from "../Media/mango2.c720de81.png";
 import product7 from "../Media/banana.jpeg";
 import product8 from "../Media/dragonfruit.jpeg";
+import { Product1Interface, Product2Interface } from "../types";
 
 const products = [
   {
@@ -61,7 +62,7 @@ const AllProducts = () => {
       <div className="allProducts">
         <h1>All Products</h1>
         <div className="product-card">
-          {products.map((product: any) => {
+          {products.map((product: Product1Interface) => {
             const { picture, name, price } = product;
             return (
               <div className="product">
@@ -77,7 +78,7 @@ const AllProducts = () => {
         </div>
         <div className="hide-product">
           <div className="product-card">
-            {products2.map((product2: any) => {
+            {products2.map((product2: Product2Interface) => {
               const { picture, name, price } = product2;
               return (
                 <div className="product">
@@ -104,7 +105,7 @@ const AllProducts = () => {
         {show ? (
           <div className="product2">
             <div className="product-card">
-              {products2.map((product2: any) => {
+              {products2.map((product2: Product2Interface) => {
                 const { picture, name, price } = product2;
                 return (
                   <div className="product">

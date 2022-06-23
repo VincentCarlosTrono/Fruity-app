@@ -3,6 +3,7 @@ import "../Styling/Additional.scss";
 import avocado from "../Media/avocado.jpeg";
 import blueberry from "../Media/blueberry.jpeg";
 import watermelon from "../Media/watermelon.jpeg";
+import { AddProductInterface } from "../types";
 
 const addProducts = [
   {
@@ -27,7 +28,7 @@ const Additional = () => {
     <div className="additional-product">
       <h1>Additional Products</h1>
       <div className="addCards">
-        {addProducts.map((addProduct: any) => {
+        {addProducts.map((addProduct: AddProductInterface) => {
           const { picture, name, price } = addProduct;
           return (
             <div className="addCard">
