@@ -45,7 +45,7 @@ const Footer = () => {
         </div>
       </div>
       <h2>
-        Copyright <i className="bx bx-copyright"> Fruity 2021</i>
+        Copyright <i className="bx bx-copyright"> Trono, Vincent</i>
       </h2>
     </div>
   );
